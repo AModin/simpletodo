@@ -1,2 +1,0 @@
-# simpletodo
-Created with CodeSandbox
