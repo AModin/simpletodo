@@ -1,5 +1,6 @@
 import * as React from "react";
 import "./styles.css";
+import en from "./en.json"
 
 export default function App() {
   const [inputValue, setInputValue] = React.useState("");
@@ -50,7 +51,7 @@ export default function App() {
           ref={inputRef}
           onChange={e => setInputValue(e.currentTarget.value)}
         />
-        <button type="submit">Add</button>
+        <button type="submit">{en.add_btn}</button>
       </form>
       <p>
         {returnTodoItems()} remaining out of {itemsToDo.length}
